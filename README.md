@@ -6,7 +6,6 @@ Emacs config
 
 ``` sh
 git clone https://github.com/TeaSkittle/ghost-emacs/ ~/.emacs.d
-~/.emacs.d/foo install
 ```
 
 ## Contributing
