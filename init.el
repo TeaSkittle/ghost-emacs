@@ -1,6 +1,6 @@
 ;;; Ghost Emacs
 ;;;
-;;; Only external dependancy: Hack font( https://sourcefoundry.org/hack/ )
+
 
 ;; Useful defaults
 (setq initial-scratch-message "")           ; Make *scratch* buffer blank
@@ -41,8 +41,6 @@
     (tool-bar-mode -1))                     ; Disable toolbar
 (add-hook 'after-init-hook
           (lambda ()(load-theme 'monokai))) ; Load monokai-theme
-(add-to-list 'default-frame-alist
-             '(font . "Hack-11"))           ; Set font to Hack-11
 
 ;; Custom functions
 (defun reload-config ()
