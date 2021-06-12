@@ -12,7 +12,6 @@ git clone https://github.com/TeaSkittle/ghost-emacs/ ~/.emacs.d
 
 ## Changed Keybinds
 
-*WIP*
 
 | Keybinding        | elisp command                        |  
 |-------------------|--------------------------------------|
