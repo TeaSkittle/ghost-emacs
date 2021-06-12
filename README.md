@@ -7,7 +7,7 @@ This Emacs configuration aims to enhance the default Emacs expericine without re
 ## Installation
 
 ``` sh
-git clone https://github.com/TeaSkittle/ghost-emacs/ ~/.emacs.d
+git clone https://github.com/TeaSkittle/ghost-emacs ~/.emacs.d
 ```
 
 ## Changed Keybinds
