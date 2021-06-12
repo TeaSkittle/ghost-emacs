@@ -1,5 +1,7 @@
 # Ghost Emacs
 
+<img src="ghost/logo.png" alt="logo" width="200"/>
+
 Emacs config
 
 ## Installation
