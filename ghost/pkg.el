@@ -3,8 +3,7 @@
 
 ;; List of packages
 (setq package-list
-      '(rainbow-delimiters fish-mode d-mode markdown-mode
-                           monokai-theme dashboard))
+      '(rainbow-delimiters monokai-theme dashboard))
 
 ;; Setup package.el
 (require 'package)
