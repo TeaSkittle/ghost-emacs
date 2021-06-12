@@ -14,9 +14,10 @@ git clone https://github.com/TeaSkittle/ghost-emacs/ ~/.emacs.d
 
 *WIP*
 
-| Keybinding        | Description                          |
-| `<f6>`            | Global option toggles                |
-| `C-c w`/`C-x o w` | Window management                    |
+| Keybinding        | Description                          |  
+|-------------------|--------------------------------------|
+| `C-f`             | Forward Search                       |  
+| `C-b`             | Switch to Buffer                     |  
 
 ## License
 [GPLv3](https://choosealicense.com/licenses/gpl-3.0/)
