@@ -2,7 +2,7 @@
 
 <img src="ghost/logo.png" alt="logo" width="200"/>
 
-Emacs config
+This Emacs configuration aims to enhance the default Emacs expericine without requiring the user to go through a steep learning curve in order to enjoy using Emacs. It is heavily inspired by the [Howl editor](https://howl.io/) and uses the Monokai color theme.
 
 ## Installation
 
