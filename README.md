@@ -14,10 +14,14 @@ git clone https://github.com/TeaSkittle/ghost-emacs/ ~/.emacs.d
 
 *WIP*
 
-| Keybinding        | Description                          |  
+| Keybinding        | elisp command                        |  
 |-------------------|--------------------------------------|
-| `C-f`             | Forward Search                       |  
-| `C-b`             | Switch to Buffer                     |  
+| `C-f`             | isearch-forward                      |  
+| `C-b`             | switch-to-buffer                     |  
+| `C-w`             | kill-current-buffer                  |  
+| `C-s`             | save-buffer                          |  
+| `C-o`             | find-file                            | 
+| `C-<tab>`         | other-window                         |  
 
 ## License
 [GPLv3](https://choosealicense.com/licenses/gpl-3.0/)
