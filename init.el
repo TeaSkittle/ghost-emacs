@@ -1,6 +1,4 @@
 ;;; Ghost Emacs
-;;;
-
 
 ;; Useful defaults
 (setq initial-scratch-message "")           ; Make *scratch* buffer blank
@@ -24,7 +22,7 @@
 	  (if (and (fboundp 'display-line-numbers-mode)
 		   (display-graphic-p))
 	      #'display-line-numbers-mode
-	    #'linum-mode))                      ; Show line numbers in programming modes
+	    #'linum-mode))                  ; Show line numbers in programming modes
 (setq gc-cons-threshold 402653184
       gc-cons-percentage 0.6)               ; Make emacs startup faster
 (setq read-process-output-max
