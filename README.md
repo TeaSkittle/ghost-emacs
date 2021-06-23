@@ -2,7 +2,7 @@
 
 <img src="ghost/logo.png" alt="logo" width="200"/>
 
-This Emacs configuration aims to enhance the default Emacs experience without requiring the user to go through a steep learning curve in order to enjoy using Emacs. It is heavily inspired by the [Howl editor](https://howl.io/) and uses the Monokai color theme. Ghost Emacs is degisned to be simple, based around [CUA Mode](https://www.emacswiki.org/emacs/CuaMode) keybinds, very few packages, and no external dependencies. 
+This Emacs configuration aims to enhance the default Emacs experience without requiring the user to go through a steep learning curve in order to enjoy using Emacs. It is heavily inspired by the [Howl editor](https://howl.io/) and uses the Monokai color scheme. Ghost Emacs is degisned to be simple, based around [CUA Mode](https://www.emacswiki.org/emacs/CuaMode) keybinds, very few packages, and no external dependencies. 
 
 ## Installation
 
