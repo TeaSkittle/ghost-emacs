@@ -3,7 +3,7 @@
 
 ;; List of packages
 (setq package-list
-      '(rainbow-delimiters monokai-theme dashboard))
+      '(rainbow-delimiters monokai-theme dashboard tabbar parchment-theme))
 
 ;; Setup package.el
 (require 'package)
@@ -18,6 +18,9 @@
   (package-install 'use-package))
 (eval-when-compile (require 'use-package))
 (setq use-package-always-ensure t)
+
+;; Activate all the packages
+(package-initialize)
 
 ;; Fetch the list of packages available 
 (unless package-archive-contents
@@ -41,3 +44,9 @@
 (dashboard-setup-startup-hook)
 (setq dashboard-banner-logo-title "Welcome to Ghost Emacs")
 (setq dashboard-startup-banner "~/.emacs.d/ghost/logo.png")
+
+;; New
+(require 'rainbow-delimiters)
+(add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
+(require 'tabbar)
+(tabbar-mode t)
