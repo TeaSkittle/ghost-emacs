@@ -13,6 +13,7 @@
 (setq ring-bell-function 'ignore)           ; Disable bell sound
 (fset 'yes-or-no-p 'y-or-n-p)               ; y-or-n-p makes answering questions faster
 (show-paren-mode 1)                         ; Show closing parens by default
+(setq show-paren-delay 0)                   ; Quickly show matching parenthesis
 (setq linum-format "%4d ")                  ; Line number format
 (setq require-final-newline t)              ; Add newline at end of file if not there
 (delete-selection-mode 1)                   ; Delete what is selected when typing
@@ -34,11 +35,13 @@
 (global-hl-line-mode 1)                     ; Enable hl-line.el
 (set-face-foreground 'highlight nil)        ; Keep foreground color
 (blink-cursor-mode 0)                       ; Cursor blinking
-(set-cursor-color "DeepPink")               ; Change cursor color
 (if (fboundp 'tool-bar-mode)
     (tool-bar-mode -1))                     ; Disable toolbar
 (add-hook 'after-init-hook
           (lambda ()(load-theme 'monokai))) ; Load monokai-theme
+;;
+;; List theme to use: parchment
+;;
 
 ;; Custom functions
 (defun reload-config ()
@@ -58,6 +61,7 @@
 ;; Will make into own file once more complete
 (cua-mode t)                         ; Set C-c, C-x, anc C-v to normal
 (global-unset-key (kbd "<insert>"))  ; Disable insert key
+(global-unset-key (kbd "C-/"))
 (global-set-key (kbd "C-f") 'isearch-forward)
 (global-set-key (kbd "C-b") 'switch-to-buffer)
 (global-set-key (kbd "C-w") 'kill-current-buffer)
@@ -65,3 +69,11 @@
 (global-set-key (kbd "C-o") 'find-file)
 (global-set-key (kbd "C-<tab>") 'other-window)
 
+;; New, need o be added to README
+(global-set-key (kbd "C-/") 'comment-line)
+(global-set-key (kbd "M-S-<right>") 'split-window-right)
+(global-set-key (kbd "M-S-<down>") 'split-window-below)
+(global-set-key (kbd "M-S-<left>") 'split-window-vertically)
+(global-set-key (kbd "M-S-<up>") 'split-window-horizontally)
+(global-set-key (kbd "C-S-w") 'delete-window)
+(global-set-key (kbd "C-S-q") 'delete-other-windows)
