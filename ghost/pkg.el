@@ -19,9 +19,6 @@
 (eval-when-compile (require 'use-package))
 (setq use-package-always-ensure t)
 
-;; Activate all the packages
-;(package-initialize)
-
 ;; Fetch the list of packages available 
 (unless package-archive-contents
   (package-refresh-contents))

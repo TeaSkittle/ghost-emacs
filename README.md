@@ -20,7 +20,14 @@ git clone https://github.com/TeaSkittle/ghost-emacs ~/.emacs.d
 | `C-w`             | kill-current-buffer                  |  
 | `C-s`             | save-buffer                          |  
 | `C-o`             | find-file                            | 
-| `C-<tab>`         | other-window                         |  
+| `C-<tab>`         | other-window                         |
+| `C-/`             | comment-line                         |
+| `M-S-<right>`     | split-window-right                   |
+| `M-S-<down>`      | split-window-below                   |
+| `M-S-<left>`      | split-window-vertically              |
+| `M-S-<up>`        | split-window-horizontally            |
+| `C-S-w`           | delete-window                        |
+| `C-S-q`           | delete-other-windows                 |
 
 ## License
 [GPLv3](https://choosealicense.com/licenses/gpl-3.0/)

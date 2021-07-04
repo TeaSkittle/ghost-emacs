@@ -17,6 +17,7 @@
 (setq linum-format "%4d ")                  ; Line number format
 (setq require-final-newline t)              ; Add newline at end of file if not there
 (delete-selection-mode 1)                   ; Delete what is selected when typing
+(setq frame-resize-pixelwise t)             ; Buf fix for spectrwm
 (global-set-key [mouse-3]                  
                 'mouse-popup-menubar-stuff) ; Gives right-click a context menu 
 (add-hook 'prog-mode-hook                   
@@ -53,27 +54,5 @@
 (setq custom-file "~/.emacs.d/ghost/dump.el")
 (load custom-file)
 (load "pkg.el")
+(load "key.el")
 
-;; Spectrwm fix
-(setq frame-resize-pixelwise t)
-
-;; Custom keybinds
-;; Will make into own file once more complete
-(cua-mode t)                         ; Set C-c, C-x, anc C-v to normal
-(global-unset-key (kbd "<insert>"))  ; Disable insert key
-(global-unset-key (kbd "C-/"))
-(global-set-key (kbd "C-f") 'isearch-forward)
-(global-set-key (kbd "C-b") 'switch-to-buffer)
-(global-set-key (kbd "C-w") 'kill-current-buffer)
-(global-set-key (kbd "C-s") 'save-buffer)
-(global-set-key (kbd "C-o") 'find-file)
-(global-set-key (kbd "C-<tab>") 'other-window)
-
-;; New, need o be added to README
-(global-set-key (kbd "C-/") 'comment-line)
-(global-set-key (kbd "M-S-<right>") 'split-window-right)
-(global-set-key (kbd "M-S-<down>") 'split-window-below)
-(global-set-key (kbd "M-S-<left>") 'split-window-vertically)
-(global-set-key (kbd "M-S-<up>") 'split-window-horizontally)
-(global-set-key (kbd "C-S-w") 'delete-window)
-(global-set-key (kbd "C-S-q") 'delete-other-windows)
