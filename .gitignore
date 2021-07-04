@@ -26,6 +26,8 @@ server/
 smex-items
 tramp
 var/
+eshell/
+recentf
 
 # compiled files
 *.elc
@@ -33,3 +35,6 @@ var/
 *.fas
 *.dat
 *.eld
+
+# ghost files
+ghost/dump.el
