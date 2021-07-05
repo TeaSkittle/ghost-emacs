@@ -17,20 +17,24 @@
 (setq linum-format "%4d ")                  ; Line number format
 (setq require-final-newline t)              ; Add newline at end of file if not there
 (delete-selection-mode 1)                   ; Delete what is selected when typing
-(setq frame-resize-pixelwise t)             ; Buf fix for spectrwm
+(setq frame-resize-pixelwise t)             ; Bug fix for spectrwm
 (global-set-key [mouse-3]                  
                 'mouse-popup-menubar-stuff) ; Gives right-click a context menu 
 (add-hook 'prog-mode-hook                   
 	  (if (and (fboundp 'display-line-numbers-mode)
 		   (display-graphic-p))
 	      #'display-line-numbers-mode
-	    #'linum-mode))                  ; Show line numbers in programming modes
-(setq gc-cons-threshold 402653184
-      gc-cons-percentage 0.6)               ; Make emacs startup faster
+	    #'linum-mode))                      ; Show line numbers in programming modes
 (setq read-process-output-max
               (* 1024 1024))                ; 1mb
 (setq-default tab-width 4
               indent-tabs-mode nil)         ; Set tab to 4 spaces
+
+;; Increases Garbage Collection During Startup
+(setq startup/gc-cons-threshold gc-cons-threshold)
+(setq gc-cons-threshold most-positive-fixnum)
+(defun startup/reset-gc () (setq gc-cons-threshold startup/gc-cons-threshold))
+(add-hook 'emacs-startup-hook 'startup/reset-gc)
 
 ;; Visuals
 (global-hl-line-mode 1)                     ; Enable hl-line.el
@@ -40,9 +44,6 @@
     (tool-bar-mode -1))                     ; Disable toolbar
 (add-hook 'after-init-hook
           (lambda ()(load-theme 'monokai))) ; Load monokai-theme
-;;
-;; List theme to use: parchment
-;;
 
 ;; Custom functions
 (defun reload-config ()

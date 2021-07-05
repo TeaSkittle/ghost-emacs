@@ -3,7 +3,7 @@
 
 ;; List of packages
 (setq package-list
-      '(rainbow-delimiters monokai-theme dashboard tabbar parchment-theme))
+      '(rainbow-delimiters monokai-theme dashboard tabbar racket-mode fish-mode))
 
 ;; Setup package.el
 (require 'package)
@@ -13,11 +13,12 @@
 (unless package--initialized (package-initialize))
 
 ;; Setup use-package
-(unless (package-installed-p 'use-package)
-  (package-refresh-contents)
-  (package-install 'use-package))
-(eval-when-compile (require 'use-package))
-(setq use-package-always-ensure t)
+;; May not be needed?!?!?!
+;; (unless (package-installed-p 'use-package)
+;;   (package-refresh-contents)
+;;   (package-install 'use-package))
+;; (eval-when-compile (require 'use-package))
+;; (setq use-package-always-ensure t)
 
 ;; Fetch the list of packages available 
 (unless package-archive-contents
@@ -28,22 +29,16 @@
   (unless (package-installed-p package)
     (package-install package)))
 
-;; Function to download all packages in package-list
-;; may end up removing
-(defun download-packages()
-  (interactive)
-  (dolist (package package-list)
-    (unless (package-installed-p package)
-      (package-install package))))
-
-;; Dashboard, will end up moving to another file
+;; Dashboard
 (require 'dashboard)
 (dashboard-setup-startup-hook)
 (setq dashboard-banner-logo-title "Welcome to Ghost Emacs")
 (setq dashboard-startup-banner "~/.emacs.d/ghost/logo.png")
+(setq dashboard-items '((recents . 15)))
 
-;; New
+;; Other package settings
 (require 'rainbow-delimiters)
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
 (require 'tabbar)
 (tabbar-mode t)
+

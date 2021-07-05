@@ -2,6 +2,14 @@
 
 <img src="ghost/logo.png" alt="logo" width="200"/>
 
+**Contents**
+
+- [Ghost Emacs](#ghost-eamcs)
+- [Installation](#installation)
+- [Elisp Files](#elisp-files)
+- [Keybinds](#keybinds)
+- [License](#license)
+
 This Emacs configuration aims to enhance the default Emacs experience without requiring the user to go through a steep learning curve in order to enjoy using Emacs. It is heavily inspired by the [Howl editor](https://howl.io/) and uses the Monokai color scheme. Ghost Emacs is degisned to be simple, based around [CUA Mode](https://www.emacswiki.org/emacs/CuaMode) keybinds, very few packages, and no external dependencies. 
 
 ## Installation
@@ -10,8 +18,16 @@ This Emacs configuration aims to enhance the default Emacs experience without re
 git clone https://github.com/TeaSkittle/ghost-emacs ~/.emacs.d
 ```
 
-## Changed Keybinds
+## Elisp Files
 
+- init.el - General setting( visuals, defaults, etc... )
+- pkg.el - Donwload and configure needed MELPA packages
+- key.el - Keybind configuration[see section below](#keybinds)
+- dump.el - Location for customer-file
+
+## Keybinds
+
+The changes made in key.el
 
 | Keybinding        | elisp command                        |  
 |-------------------|--------------------------------------|
