@@ -12,14 +12,6 @@
 (add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/"))
 (unless package--initialized (package-initialize))
 
-;; Setup use-package
-;; May not be needed?!?!?!
-;; (unless (package-installed-p 'use-package)
-;;   (package-refresh-contents)
-;;   (package-install 'use-package))
-;; (eval-when-compile (require 'use-package))
-;; (setq use-package-always-ensure t)
-
 ;; Fetch the list of packages available 
 (unless package-archive-contents
   (package-refresh-contents))
