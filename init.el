@@ -18,6 +18,7 @@
 (setq require-final-newline t)              ; Add newline at end of file if not there
 (delete-selection-mode 1)                   ; Delete what is selected when typing
 (setq frame-resize-pixelwise t)             ; Bug fix for spectrwm
+(setq auto-save-default nil)                ; Stop creating #autosave# files
 (global-set-key [mouse-3]                  
                 'mouse-popup-menubar-stuff) ; Gives right-click a context menu 
 (add-hook 'prog-mode-hook                   

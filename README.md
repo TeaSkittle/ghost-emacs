@@ -44,6 +44,7 @@ The changes made in key.el
 | `M-S-<up>`        | split-window-horizontally            |
 | `C-S-w`           | delete-window                        |
 | `C-S-q`           | delete-other-windows                 |
+| `M-a`             | mark-whole-buffer                    |
 
 ## License
 [GPLv3](https://choosealicense.com/licenses/gpl-3.0/)
