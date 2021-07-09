@@ -3,7 +3,7 @@
 
 ;; List of packages
 (setq package-list
-      '(rainbow-delimiters monokai-theme dashboard tabbar racket-mode fish-mode))
+      '(rainbow-delimiters monokai-theme dashboard centaur-tabs racket-mode fish-mode))
 
 ;; Setup package.el
 (require 'package)
@@ -31,6 +31,8 @@
 ;; Other package settings
 (require 'rainbow-delimiters)
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
-(require 'tabbar)
-(tabbar-mode t)
+(require 'centaur-tabs)
+(centaur-tabs-mode t)
+(centaur-tabs-headline-match)
+(setq centaur-tabs-cycle-scope 'groups)
 

@@ -23,7 +23,8 @@ git clone https://github.com/TeaSkittle/ghost-emacs ~/.emacs.d
 - init.el - General setting( visuals, defaults, etc... )
 - pkg.el - Donwload and configure needed MELPA packages
 - key.el - Keybind configuration [see section below](#keybinds)
-- dump.el - Location for customer-file
+- visuals.el - Theming and visual settings
+- dump.el - Location for custom-file
 
 ## Keybinds
 

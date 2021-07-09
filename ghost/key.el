@@ -18,3 +18,4 @@
 (global-set-key (kbd "C-S-w") 'delete-window)
 (global-set-key (kbd "C-S-q") 'delete-other-windows)
 (global-set-key (kbd "M-a") 'mark-whole-buffer)
+
