@@ -30,22 +30,24 @@ git clone https://github.com/TeaSkittle/ghost-emacs ~/.emacs.d
 
 The changes made in key.el
 
-| Keybinding        | elisp command                        |  
-|-------------------|--------------------------------------|
-| `C-f`             | isearch-forward                      |  
-| `C-b`             | switch-to-buffer                     |  
-| `C-w`             | kill-current-buffer                  |  
-| `C-s`             | save-buffer                          |  
-| `C-o`             | find-file                            | 
-| `C-<tab>`         | other-window                         |
-| `C-/`             | comment-line                         |
-| `M-S-<right>`     | split-window-right                   |
-| `M-S-<down>`      | split-window-below                   |
-| `M-S-<left>`      | split-window-vertically              |
-| `M-S-<up>`        | split-window-horizontally            |
-| `C-S-w`           | delete-window                        |
-| `C-S-q`           | delete-other-windows                 |
-| `M-a`             | mark-whole-buffer                    |
+| Keybinding        | elisp command               |  
+|-------------------|-----------------------------|
+| `C-f`             | isearch-forward             |  
+| `C-b`             | switch-to-buffer            |  
+| `C-w`             | kill-current-buffer         |  
+| `C-s`             | save-buffer                 |  
+| `C-o`             | find-file                   | 
+| `C-<tab>`         | other-window                |
+| `C-/`             | comment-line                |
+| `M-S-<right>`     | split-window-right          |
+| `M-S-<down>`      | split-window-below          |
+| `M-S-<left>`      | split-window-vertically     |
+| `M-S-<up>`        | split-window-horizontally   |
+| `C-S-w`           | delete-window               |
+| `C-S-q`           | delete-other-windows        |
+| `M-a`             | mark-whole-buffer           |
+| `M-<up>`          | move-line-up                |
+| `M-<down>`        | move-line-down              |
 
 ## License
 [GPLv3](https://choosealicense.com/licenses/gpl-3.0/)

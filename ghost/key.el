@@ -1,9 +1,14 @@
 ;;; key.el
 ;;; Change abnd modified keybinds
 
-(cua-mode t)                         ; Set C-c, C-x, anc C-v to normal
-(global-unset-key (kbd "<insert>"))  ; Disable insert key
+;; Set C-c, C-x, anc C-v to normal
+(cua-mode t)
+
+;; Disable keys
+(global-unset-key (kbd "<insert>"))
 (global-unset-key (kbd "C-/"))
+
+;;Set keys
 (global-set-key (kbd "C-f") 'isearch-forward)
 (global-set-key (kbd "C-b") 'switch-to-buffer)
 (global-set-key (kbd "C-w") 'kill-current-buffer)
@@ -18,4 +23,30 @@
 (global-set-key (kbd "C-S-w") 'delete-window)
 (global-set-key (kbd "C-S-q") 'delete-other-windows)
 (global-set-key (kbd "M-a") 'mark-whole-buffer)
+
+;; Keybinds for below customer functions
+(global-set-key (kbd "M-<up>") 'move-line-up)
+(global-set-key (kbd "M-<down>") 'move-line-down)
+(global-set-key (kbd "<f5>") 'reload-config)
+
+;; Reload config
+(defun reload-config ()
+  (interactive)
+  (load-file (concat user-emacs-directory "~/.emacs.d/init.el")))
+;; https://emacsredux.com/blog/2013/04/02/move-current-line-up-or-down/
+;; Move line up
+(defun move-line-up ()
+  "Move up the current line."
+  (interactive)
+  (transpose-lines 1)
+  (forward-line -2)
+  (indent-according-to-mode))
+;; Move line down
+(defun move-line-down ()
+  "Move down the current line."
+  (interactive)
+  (forward-line 1)
+  (transpose-lines 1)
+  (forward-line -1)
+  (indent-according-to-mode))
 

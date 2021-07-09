@@ -31,8 +31,4 @@
 ;; Other package settings
 (require 'rainbow-delimiters)
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
-(require 'centaur-tabs)
-(centaur-tabs-mode t)
-(centaur-tabs-headline-match)
-(setq centaur-tabs-cycle-scope 'groups)
 

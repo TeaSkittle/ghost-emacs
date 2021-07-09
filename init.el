@@ -22,11 +22,6 @@
 (defun startup/reset-gc () (setq gc-cons-threshold startup/gc-cons-threshold))
 (add-hook 'emacs-startup-hook 'startup/reset-gc)
 
-;; Custom functions
-(defun reload-config ()
-  (interactive)
-  (load-file (concat user-emacs-directory "~/.emacs.d/init.el")))
-
 ;; Load other elisp files
 (add-to-list 'load-path "~/.emacs.d/ghost")
 (setq custom-file "~/.emacs.d/ghost/dump.el")
