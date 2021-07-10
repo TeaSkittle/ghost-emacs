@@ -21,7 +21,7 @@ git clone https://github.com/TeaSkittle/ghost-emacs ~/.emacs.d
 
 ## Packages
 
-All of these packagesa are downloaded through MELPA
+All of these packages are available and downloaded through MELPA
 
 - rainbow-deilimiters
 - monokai-theme
