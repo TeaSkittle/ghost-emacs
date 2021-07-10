@@ -35,6 +35,3 @@ recentf
 *.fas
 *.dat
 *.eld
-
-# ghost files
-ghost/dump.el
