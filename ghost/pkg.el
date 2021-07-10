@@ -3,7 +3,7 @@
 
 ;; List of packages
 (setq package-list
-      '(rainbow-delimiters monokai-theme dashboard centaur-tabs racket-mode fish-mode))
+      '(rainbow-delimiters monokai-theme dashboard mood-line racket-mode fish-mode))
 
 ;; Setup package.el
 (require 'package)
@@ -28,7 +28,11 @@
 (setq dashboard-startup-banner "~/.emacs.d/ghost/logo.png")
 (setq dashboard-items '((recents . 15)))
 
-;; Other package settings
+;; Rainbow-delimiters
 (require 'rainbow-delimiters)
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
+
+;; Mode-line
+(require 'mood-line)
+(mood-line-mode)
 

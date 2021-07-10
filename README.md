@@ -6,17 +6,29 @@
 
 - [Ghost Emacs](#ghost-emacs)
 - [Installation](#installation)
+- [Packages](#packages)
 - [Elisp Files](#elisp-files)
 - [Keybinds](#keybinds)
 - [License](#license)
 
-This Emacs configuration aims to enhance the default Emacs experience without requiring the user to go through a steep learning curve in order to enjoy using Emacs. It is heavily inspired by the [Howl editor](https://howl.io/) and uses the Monokai color scheme. Ghost Emacs is degisned to be simple, based around [CUA Mode](https://www.emacswiki.org/emacs/CuaMode) keybinds, very few packages, and no external dependencies. 
+This is my Emacs configuration which aims to enhance the default Emacs experience without requiring the user to go through a steep learning curve in order to enjoy using Emacs. It is heavily inspired by the [Howl editor](https://howl.io/) and uses the Monokai color scheme. Ghost Emacs is degisned to be simple, based around [CUA Mode](https://www.emacswiki.org/emacs/CuaMode) keybinds, very few packages, and no external dependencies. I have tried to do make changes without heavily altering the default Emacs experience.
 
 ## Installation
 
 ``` sh
 git clone https://github.com/TeaSkittle/ghost-emacs ~/.emacs.d
 ```
+
+## Packages
+
+All of these packagesa are downloaded through MELPA
+
+- rainbow-deilimiters
+- monokai-theme
+- dashboard
+- mood-line
+- racket-mode
+- fish-mode
 
 ## Elisp Files
 
