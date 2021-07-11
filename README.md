@@ -16,8 +16,8 @@ This is my Emacs configuration which aims to enhance the default Emacs experienc
 
 ## Screenshots
 
-<img src="ghost/screen1.png" alt="screen1" width="400"/>
-<img src="ghost/screen2.png" alt="screen2" width="400"/>
+<img src="ghost/screen1.png" alt="screen1" width="800"/>
+<img src="ghost/screen2.png" alt="screen2" width="800"/>
 
 ## Installation
 
