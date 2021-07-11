@@ -32,7 +32,7 @@
 (require 'rainbow-delimiters)
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
 
-;; Mode-line
+;; Mood-line
 (require 'mood-line)
 (mood-line-mode)
 

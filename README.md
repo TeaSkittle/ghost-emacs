@@ -5,13 +5,18 @@
 **Contents**
 
 - [Ghost Emacs](#ghost-emacs)
+- [Screenshots](#screenshots)
 - [Installation](#installation)
 - [Packages](#packages)
 - [Elisp Files](#elisp-files)
 - [Keybinds](#keybinds)
 - [License](#license)
 
-This is my Emacs configuration which aims to enhance the default Emacs experience without requiring the user to go through a steep learning curve in order to enjoy using Emacs. It is heavily inspired by the [Howl editor](https://howl.io/) and uses the Monokai color scheme. Ghost Emacs is degisned to be simple, based around [CUA Mode](https://www.emacswiki.org/emacs/CuaMode) keybinds, very few packages, and no external dependencies. I have tried to do make changes without heavily altering the default Emacs experience.
+This is my Emacs configuration which aims to enhance the default Emacs experience without requiring the user to go through a steep learning curve in order to enjoy using Emacs. It is heavily inspired by the [Howl editor](https://howl.io/), [Sanemacs](https://sanemacs.com/) and uses the Monokai color scheme. Ghost Emacs is degisned to be simple, based around [CUA Mode](https://www.emacswiki.org/emacs/CuaMode) keybinds, very few packages, and no external dependencies. I have tried to make the changes without heavily altering the default Emacs experience.
+
+## Screenshots
+
+<img src="ghost/screen1.png" alt="screen1" width="400"/>
 
 ## Installation
 
