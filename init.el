@@ -16,11 +16,13 @@
 (setq-default tab-width 4 indent-tabs-mode nil) ; Set tab to 4 spaces
 (global-set-key [mouse-3]'mouse-popup-menubar-stuff) ; Gives right-click a context menu
 
-;; Increases Garbage Collection During Startup
-(setq startup/gc-cons-threshold gc-cons-threshold)
-(setq gc-cons-threshold most-positive-fixnum)
-(defun startup/reset-gc () (setq gc-cons-threshold startup/gc-cons-threshold))
-(add-hook 'emacs-startup-hook 'startup/reset-gc)
+;; Garbage collection (from doom-emacs)
+(setq gc-cons-threshold most-positive-fixnum ; 2^61 bytes
+      gc-cons-percentage 0.6)
+(add-hook 'emacs-startup-hook
+  (lambda ()
+    (setq gc-cons-threshold 16777216 ; 16mb
+          gc-cons-percentage 0.1)))
 
 ;; Load other elisp files
 (add-to-list 'load-path "~/.emacs.d/ghost")
