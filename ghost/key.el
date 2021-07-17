@@ -20,12 +20,10 @@
 (global-set-key (kbd "C-o") 'find-file)
 (global-set-key (kbd "C-<tab>") 'other-window)
 (global-set-key (kbd "C-/") 'comment-line)
-(global-set-key (kbd "M-S-<right>") 'split-window-right)
-(global-set-key (kbd "M-S-<down>") 'split-window-below)
-(global-set-key (kbd "M-S-<left>") 'split-window-vertically)
-(global-set-key (kbd "M-S-<up>") 'split-window-horizontally)
+(global-set-key (kbd "C-M-v") 'split-window-vertically)
+(global-set-key (kbd "C-M-h") 'split-window-horizontally)
 (global-set-key (kbd "C-S-w") 'delete-window)
-(global-set-key (kbd "C-S-q") 'delete-other-windows)
+(global-set-key (kbd "C-M-w") 'delete-other-windows)
 (global-set-key (kbd "M-a") 'mark-whole-buffer)
 
 ;; Keybinds for below custom functions

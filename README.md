@@ -12,7 +12,7 @@
 - [Keybinds](#keybinds)
 - [License](#license)
 
-This is my Emacs configuration which aims to enhance the default Emacs experience without requiring the user to go through a steep learning curve in order to enjoy using Emacs. It is heavily inspired by the [Howl editor](https://howl.io/), [Sanemacs](https://sanemacs.com/) and uses the Monokai color scheme. Ghost Emacs is degisned to be simple, based around [CUA Mode](https://www.emacswiki.org/emacs/CuaMode) keybinds, very few packages, and no external dependencies. I have tried to make the changes without heavily altering the default Emacs experience.
+This is my Emacs configuration which aims to enhance the default Emacs experience without requiring the user to go through a steep learning curve in order to enjoy using Emacs. It is inspired by [Howl](https://howl.io/), [Textadept](https://orbitalquark.github.io/textadept/), and [Sanemacs](https://sanemacs.com/). Ghost Emacs is degisned to be simple, based around [CUA Mode](https://www.emacswiki.org/emacs/CuaMode) keybinds, very few packages, and no external dependencies. I have tried to make the changes without heavily altering the default Emacs experience.
 
 ## Screenshots
 
@@ -57,12 +57,10 @@ The changes made in key.el
 | `C-o`             | find-file                   | 
 | `C-<tab>`         | other-window                |
 | `C-/`             | comment-line                |
-| `M-S-<right>`     | split-window-right          |
-| `M-S-<down>`      | split-window-below          |
-| `M-S-<left>`      | split-window-vertically     |
-| `M-S-<up>`        | split-window-horizontally   |
+| `C-M-v`           | split-window-vertically     |
+| `C-M-h`           | split-window-horizontally   |
 | `C-S-w`           | delete-window               |
-| `C-S-q`           | delete-other-windows        |
+| `C-M-w`           | delete-other-windows        |
 | `M-a`             | mark-whole-buffer           |
 | `M-<up>`          | move-line-up                |
 | `M-<down>`        | move-line-down              |
