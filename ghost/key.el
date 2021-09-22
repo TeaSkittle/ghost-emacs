@@ -25,6 +25,7 @@
 (global-set-key (kbd "C-S-w") 'delete-window)
 (global-set-key (kbd "C-M-w") 'delete-other-windows)
 (global-set-key (kbd "M-a") 'mark-whole-buffer)
+(global-set-key (kbd "C-c o") 'occur)
 
 ;; Keybinds for below custom functions
 (global-set-key (kbd "M-<up>") 'move-line-up)
