@@ -12,13 +12,8 @@
 (blink-cursor-mode 0)                       ; Disable cursor blinking
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1)) ; Disable toolbar
 
-;; Show line numbers in programming modes
-(add-hook 'prog-mode-hook                   
-	  (if (and (fboundp 'display-line-numbers-mode)
-		   (display-graphic-p))
-	      #'display-line-numbers-mode
-	    #'linum-mode))
+;; Enable line numbers in all modes
+(global-display-line-numbers-mode)
 
 ;; Load theme
 (add-hook 'after-init-hook (lambda ()(load-theme 'monokai)))
-
