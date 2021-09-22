@@ -64,6 +64,7 @@ The changes made in key.el
 | `M-a`             | mark-whole-buffer           |
 | `M-<up>`          | move-line-up                |
 | `M-<down>`        | move-line-down              |
+| `C-c o`           | occur                       |
 
 ## License
 [GPLv3](https://choosealicense.com/licenses/gpl-3.0/)
