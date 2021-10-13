@@ -35,6 +35,7 @@ All of these packages are available and downloaded through MELPA
 - mood-line
 - racket-mode
 - fish-mode
+- markdown-mode
 
 ## Elisp Files
 
