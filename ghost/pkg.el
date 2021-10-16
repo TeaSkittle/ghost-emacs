@@ -1,10 +1,6 @@
 ;;; pkg.el
 ;;; Set up and install external packages seperately from init.el
 
-;; List of packages
-(setq package-list
-      '(rainbow-delimiters monokai-theme dashboard mood-line racket-mode fish-mode markdown-mode))
-
 ;; Setup package.el
 (require 'package)
 (setq package-enable-at-startup nil)
@@ -15,6 +11,10 @@
 ;; Fetch the list of packages available 
 (unless package-archive-contents
   (package-refresh-contents))
+
+;; List of packages
+(setq package-list
+      '(rainbow-delimiters monokai-theme dashboard mood-line racket-mode fish-mode markdown-mode))
 
 ;; Install the missing packages
 (dolist (package package-list)
