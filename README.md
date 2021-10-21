@@ -48,7 +48,7 @@ All of these packages are available and downloaded through MELPA
 
 ## Keybinds
 
-The changes made in key.el
+List of custom keybinds found in key.el
 
 | Keybinding        | elisp command               |  
 |-------------------|-----------------------------|
