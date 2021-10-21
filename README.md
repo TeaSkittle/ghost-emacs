@@ -36,6 +36,7 @@ All of these packages are available and downloaded through MELPA
 - racket-mode
 - fish-mode
 - markdown-mode
+- buffer-move
 
 ## Elisp Files
 
@@ -65,6 +66,10 @@ The changes made in key.el
 | `M-a`             | mark-whole-buffer           |
 | `M-<up>`          | move-line-up                |
 | `M-<down>`        | move-line-down              |
+| `C-S-<up>`        | buf-move-up                 |
+| `C-S-<down>`      | buf-move-down               |
+| `C-S-<left>`      | buf-move-left               |
+| `C-S-<right>`     | buf-move-right              |
 
 ## License
 [GPLv3](https://choosealicense.com/licenses/gpl-3.0/)
