@@ -59,10 +59,6 @@ The changes made in key.el
 | `C-o`             | find-file                   | 
 | `C-<tab>`         | other-window                |
 | `C-/`             | comment-line                |
-| `C-M-v`           | split-window-vertically     |
-| `C-M-h`           | split-window-horizontally   |
-| `C-S-w`           | delete-window               |
-| `C-M-w`           | delete-other-windows        |
 | `M-a`             | mark-whole-buffer           |
 | `M-<up>`          | move-line-up                |
 | `M-<down>`        | move-line-down              |
