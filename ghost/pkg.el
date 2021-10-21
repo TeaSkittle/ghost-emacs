@@ -14,7 +14,8 @@
 
 ;; List of packages
 (setq package-list
-      '(rainbow-delimiters monokai-theme dashboard mood-line racket-mode fish-mode markdown-mode))
+      '(rainbow-delimiters monokai-theme dashboard mood-line racket-mode fish-mode
+                           markdown-mode buffer-move))
 
 ;; Install the missing packages
 (dolist (package package-list)
