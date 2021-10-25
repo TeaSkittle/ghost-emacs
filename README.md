@@ -41,7 +41,7 @@ All of these packages are available and downloaded through MELPA
 ## Elisp Files
 
 - init.el - General setting( visuals, defaults, etc... )
-- pkg.el - Donwload and configure needed MELPA packages
+- pkg.el - Download and configure needed MELPA packages
 - key.el - Keybind configuration [see section below](#keybinds)
 - visuals.el - Theming and visual settings
 - dump.el - Location for custom-file
