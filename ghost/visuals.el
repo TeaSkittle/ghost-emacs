@@ -10,6 +10,7 @@
 (global-hl-line-mode 1)                     ; Enable hl-line.el
 (set-face-foreground 'highlight nil)        ; Keep foreground color
 (blink-cursor-mode 0)                       ; Disable cursor blinking
+(setq-default cursor-type 'bar)             ; Set cursor to bar
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1)) ; Disable toolbar
 
 ;; Enable line numbers in all modes
