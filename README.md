@@ -66,6 +66,3 @@ List of custom keybinds found in key.el
 | `C-S-<down>`      | buf-move-down               |
 | `C-S-<left>`      | buf-move-left               |
 | `C-S-<right>`     | buf-move-right              |
-
-## License
-[GPLv3](https://choosealicense.com/licenses/gpl-3.0/)
