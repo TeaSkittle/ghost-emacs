@@ -2,6 +2,10 @@
 
 <img src="ghost/logo.png" alt="logo" width="200"/>
 
+**This is no longer being maintained.** After spendig more time with it, I found I was moving too far  
+away from the Emacs way of doing things and started having issues. I am currently using a slighlty  
+modifed version of: [emfy](https://github.com/susam/emfy)  
+
 **Contents**
 
 - [Ghost Emacs](#ghost-emacs)
